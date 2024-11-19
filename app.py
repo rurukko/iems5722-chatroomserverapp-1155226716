@@ -4,7 +4,7 @@ from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
 from pydantic import BaseModel
 from fastapi import Request
-import json
+import simplejson
 
 app = FastAPI()
 
