@@ -6,6 +6,5 @@ python-multipart
 datetime
 pydantic
 simplejson
-os
 pymongo
 firebase_admin

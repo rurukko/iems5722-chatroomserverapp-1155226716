@@ -31,6 +31,12 @@ app = FastAPI()
 async def root():
     return {"message": "Hello World"}
 
+@app.get("/demo/")
+async def get_demo(a: int = 0, b: int = 0, status_code=200):
+    sum = a+b
+    data = {"sum": sum, "date": date.today()}
+    return JSONResponse(content=jsonable_encoder(data))
+
 
 @app.get("/get_chatrooms/")
 async def get_chatrooms(request: Request):
